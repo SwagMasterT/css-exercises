@@ -2,20 +2,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.warning {
-  color: orange;
-  background-color: lightyellow;
-}
-
 .notice {
   color: blue;
   background-color: lightblue;
-}
-
-.primary {
-  background-color: green;
-  color: white;
-  font-size: 18px;
 }
 
 .btn {
@@ -26,12 +15,23 @@ body {
   border: none;
 }
 
-.highlight {
-  color: red;
-  font-weight: bold;
+.primary {
+  background-color: green;
+  color: white;
+  font-size: 18px;
 }
 
 .label {
   color: gray;
   font-size: 14px;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.warning {
+  color: orange;
+  background-color: lightyellow;
 }
