@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#subsection {
+  background-color: yellow;
+  color: blue;
+}
+
+.main .list {
+  color: red;
+}
+
+#parent {
+  color: red;
+}
+
+#parent p {
+  color: red;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid black;
+}
+
+.para,
+.small-para {
+  font-weight: 800;
+}
+
+.para {
+  font-size: 22px;
+}
+
+/* SOLUTION */
+
+/*
+  #subsection (one ID) beats .main .list (two classes) for color, so text
+  stays blue. We added .main to the ID selector for higher specificity.
+
+  The background-color: yellow from #subsection still applies since nothing
+  conflicts with it — a great example of non-conflicting declarations coexisting.
+*/
+
+.main #subsection {
+  color: red;
+}
+
+/*
+  #parent p (one ID + one type) beats .child (one class).
+  We scoped the child selector to the parent ID.
+
+  Another solution would be p.child or #parent > .child.
+*/
+
+#parent .child {
+  color: blue;
+}
+
+/*
+  The duplicate .button block was overriding .confirm by rule order.
+  We replaced .confirm with #confirm-btn so the ID wins.
+
+  Another solution: remove the duplicate .button block and move .confirm
+  below it, or use .button.confirm.
+*/
+
+#confirm-btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+/*
+  .alert appeared twice with .warning sandwiched between, so red won by
+  rule order. We removed the duplicate and placed .warning last.
+
+  Another solution: .alert.warning { color: yellow; }
+*/
+
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
+
+/*
+  .para came after .small-para with equal specificity, so 22px won for
+  the small paragraph. We moved .small-para below .para.
+
+  Another solution: .para.small-para { font-size: 14px; }
+*/
+
+.small-para {
+  font-size: 14px;
+}

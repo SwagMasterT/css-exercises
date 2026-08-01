@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subsection {
+  color: blue;
+}
+
+/* SOLUTION */
+
+/*
+  .list and .subsection each have one class. Because .subsection comes
+  last, blue wins. We changed .list to .main .list so its two classes
+  beat the single .subsection class.
+
+  Another solution would be to chain classes: .list.subsection { color: red; }
+*/
+
+.main .list {
+  color: red;
+}
+
+/*
+  .nav .link has two classes, which beats .active with only one.
+  We added the .nav prefix to .active so both rules have two classes
+  and .nav .active wins by rule order.
+
+  Another solution would be to chain: .link.active { color: orange; }
+*/
+
+.nav .active {
+  color: orange;
+  font-weight: bold;
+}

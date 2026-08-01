@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#article {
+  color: black;
+}
+
+#sidebar {
+  color: red;
+}
+
+#sidebar p {
+  color: red;
+  font-style: normal;
+}
+
+/* SOLUTION */
+
+/*
+  #article p (one ID + one type) beats .summary (one class).
+  We added the ID to the selector so it directly targets the summary.
+
+  Another solution would be p.summary or .article .summary if you added
+  a class to the parent, but #article .summary matches the HTML as-is.
+*/
+
+#article .summary {
+  color: gray;
+}
+
+/*
+  Same issue in the sidebar: #sidebar p beats .quote.
+  We scoped the quote rule to the sidebar with an ID selector.
+
+  Another solution would be #sidebar .quote or p.quote.
+*/
+
+#sidebar .quote {
+  color: blue;
+  font-style: italic;
+}

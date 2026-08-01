@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#article {
+  color: black;
+}
+
+#article p {
+  color: black;
+}
+
+.summary {
+  color: gray;
+}
+
+#sidebar {
+  color: red;
+}
+
+#sidebar p {
+  color: red;
+  font-style: normal;
+}
+
+.quote {
+  color: blue;
+  font-style: italic;
+}

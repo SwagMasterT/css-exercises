@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SOLUTION */
+
+/*
+  Each pair of conflicting rules has equal specificity (one class each).
+  We moved the intended rule to the bottom so it wins by rule order.
+
+  Another solution for any of these would be to chain selectors for higher
+  specificity, e.g. .notice.warning { color: orange; }
+*/
+
+.notice {
+  color: blue;
+  background-color: lightblue;
+}
+
+.warning {
+  color: orange;
+  background-color: lightyellow;
+}
+
+.btn {
+  background-color: gray;
+  color: black;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.primary {
+  background-color: green;
+  color: white;
+  font-size: 18px;
+}
+
+.label {
+  color: gray;
+  font-size: 14px;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}

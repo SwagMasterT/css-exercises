@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .title {
+  font-size: 28px;
+  color: darkgray;
+}
+
+.title {
+  font-size: 24px;
+  color: gray;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: 1px solid black;
+}
+
+.submit {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+/* SOLUTION */
+
+/*
+  The .heading selector doesn't match anything in the HTML.
+  We replaced it with #page-title, which beats .header .title.
+
+  Another solution would be to use a more specific class chain like
+  .header #page-title, but the ID alone is sufficient here.
+*/
+
+#page-title {
+  font-size: 36px;
+  color: navy;
+}
+
+/*
+  The duplicate .button block at the end was overriding .submit by rule order
+  (equal specificity). We replaced .submit with #submit-btn so the ID wins.
+
+  Another solution would be to remove the duplicate .button block and move
+  .submit below it, or use .button.submit for higher specificity.
+*/
+
+#submit-btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}

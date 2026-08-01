@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix the Cascade (Mixed)</title>
+    <link rel="stylesheet" href="solution.css">
+  </head>
+  <body>
+    <div class="main">
+      <div class="list" id="subsection">This should be red text on a yellow background.</div>
+    </div>
+
+    <div id="parent">
+      <p class="child">This should be blue, not inherited red.</p>
+    </div>
+
+    <button id="confirm-btn" class="button confirm">Confirm</button>
+    <button id="cancel-btn" class="button cancel">Cancel</button>
+
+    <p class="alert warning">This warning text should be yellow.</p>
+
+    <p class="para">Large bold paragraph.</p>
+    <p class="para small-para">Small bold paragraph.</p>
+  </body>
+</html>
