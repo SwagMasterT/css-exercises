@@ -10,7 +10,7 @@ body {
   color: black;
 }
 
-.summary {
+#article .summary {
   color: gray;
 }
 
@@ -23,7 +23,7 @@ body {
   font-style: normal;
 }
 
-.quote {
+#sidebar .quote {
   color: blue;
   font-style: italic;
 }

@@ -12,7 +12,7 @@ body {
   color: gray;
 }
 
-.heading {
+#page-title{
   font-size: 36px;
   color: navy;
 }
@@ -25,12 +25,12 @@ body {
   border: 1px solid black;
 }
 
-.submit {
+.button {
+  background-color: white;
+}
+
+#submit-btn {
   background-color: green;
   color: white;
   font-weight: bold;
-}
-
-.button {
-  background-color: white;
 }

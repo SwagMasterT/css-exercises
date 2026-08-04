@@ -7,7 +7,7 @@ body {
   color: blue;
 }
 
-.main .list {
+.list#subsection {
   color: red;
 }
 
@@ -19,7 +19,7 @@ body {
   color: red;
 }
 
-.child {
+#parent .child {
   color: blue;
 }
 
@@ -31,7 +31,7 @@ body {
   border: 1px solid black;
 }
 
-.confirm {
+#confirm-btn {
   background-color: green;
   color: white;
   font-weight: bold;
@@ -45,7 +45,7 @@ body {
   color: red;
 }
 
-.warning {
+.warning.alert {
   color: yellow;
 }
 
@@ -58,10 +58,12 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
 }
 
-.para {
-  font-size: 22px;
-}
+
