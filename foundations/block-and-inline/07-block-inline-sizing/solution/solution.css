@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+  padding: 32px;
+}
+
+.container {
+  background: #eee;
+  padding: 16px;
+}
+
+.box {
+  background: dodgerblue;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+}
+
+.box + .box {
+  margin-left: 16px;
+}

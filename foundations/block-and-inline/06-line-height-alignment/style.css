@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  padding: 32px;
+}
+
+.toolbar {
+  background: #333;
+  color: white;
+  padding: 0 16px;
+  /* CHANGE ME */
+  line-height: normal;
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: dodgerblue;
+  /* CHANGE ME */
+  vertical-align: baseline;
+}
+
+.title {
+  font-size: 18px;
+  /* CHANGE ME */
+  vertical-align: baseline;
+}

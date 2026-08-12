@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  padding: 32px;
+}
+
+.tag-container {
+  font-size: 0;
+}
+
+.tag {
+  font-size: 14px;
+  background: lightblue;
+  color: #333;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 8px;
+}
