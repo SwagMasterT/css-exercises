@@ -8,7 +8,7 @@ body {
   color: white;
   padding: 0 16px;
   /* CHANGE ME */
-  line-height: normal;
+  line-height: 48px;
 }
 
 .icon {
@@ -17,11 +17,11 @@ body {
   height: 24px;
   background: dodgerblue;
   /* CHANGE ME */
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .title {
   font-size: 18px;
   /* CHANGE ME */
-  vertical-align: baseline;
+  vertical-align: middle;
 }

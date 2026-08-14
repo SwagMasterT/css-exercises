@@ -17,7 +17,7 @@ nav {
 
 .nav li {
   /* CHANGE ME */
-  display: block;
+  display: inline-block;
 }
 
 .nav a {

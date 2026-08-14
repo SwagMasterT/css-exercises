@@ -1,3 +1,7 @@
+* {
+  outline: 2px solid red;
+}
+
 body {
   font-family: sans-serif;
   max-width: 400px;
@@ -22,10 +26,10 @@ h1 {
   font-weight: bold;
   width: 80px;
   /* CHANGE ME */
-  display: block;
+  display: inline-block;
 }
 
 .value {
   /* CHANGE ME */
-  display: block;
+  display: inline;
 }

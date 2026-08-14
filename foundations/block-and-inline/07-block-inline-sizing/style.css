@@ -16,7 +16,7 @@ body {
   width: 100px;
   height: 80px;
   /* CHANGE ME - width and height have no effect on inline elements */
-  display: inline;
+  display: inline-block;
 }
 
 .box + .box {
